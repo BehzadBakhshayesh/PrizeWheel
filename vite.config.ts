@@ -23,9 +23,9 @@ export default defineConfig({
       ],
       manifest: {
         id: '/PrizeWheel/',
-        name: 'جفت تاس',
-        short_name: 'جفت تاس',
-        description: 'جفت تاس',
+        name: 'چرخ گردون',
+        short_name: 'چرخ گردون',
+        description: 'چرخ گردون',
         theme_color: '#f0f2f5',
         background_color: '#f0f2f5',
         display: 'standalone',

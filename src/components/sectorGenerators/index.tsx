@@ -11,7 +11,7 @@ const STICK_HEIGHT = 24.33;
 
 export const generateSectorPaths = (
   sectors: Sector[],
-  wheelColors: [string, string] = ['#fff', '#fff'],
+  wheelColors: string[] = ['#fff', '#fff'],
   borderColor: string = '#000',
   borderWidth: number = 2,
   textFontSize: number = 18,

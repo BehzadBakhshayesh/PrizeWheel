@@ -23,7 +23,7 @@ export interface PrizeWheelProps {
   winIndicatorColor?: string;
   winIndicatorDotColor?: string;
   sticksColor?: string;
-  wheelColors?: [string, string];
+  wheelColors?: string[];
   borderColor?: string;
   borderWidth?: number;
   wheelShadowColor?: string;

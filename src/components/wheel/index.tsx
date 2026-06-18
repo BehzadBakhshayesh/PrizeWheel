@@ -1,10 +1,10 @@
 import { useRef, useState } from 'react';
 import "./style.css"
-import type { Sector } from '@/types';
+import type { PrizeWheelRef, Sector } from '@/types';
 import PrizeWheel from '../PrizeWheel';
 
 const Wheel = () => {
-    const [sectors, setSectors] = useState<Sector[]>([{
+    const [sectors] = useState<Sector[]>([{
         id: 1,
         label: "111111",
     }, {
@@ -18,14 +18,14 @@ const Wheel = () => {
         id: 4,
         label: "44444444444444",
     }]);
-    const wheelRef = useRef(null);
+    const wheelRef = useRef<PrizeWheelRef>(null);
     const [isSpinning, setIsSpinning] = useState(false);
     const startTouch = useRef(0);
 
     const handleSpinStart = () => {
         setIsSpinning(true);
     };
-    const handleSpinEnd = (sector) => {
+    const handleSpinEnd = () => {
         setIsSpinning(false);
     };
 
@@ -65,7 +65,7 @@ const Wheel = () => {
                     winIndicatorColor="#ffd700"
                     winIndicatorDotColor="#8b7500"
                     sticksColor="#ffd700"
-                    wheelColors={['#1ecbe1', '#27d83b', "#e2a41d", "#ea1553"]}
+                    wheelColors={['#1ecbe1', '#27d83b', '#e2a41d', '#ea1553']}
                     borderColor="#ffd700"
                     borderWidth={3}
                     textColor="#ffffff"

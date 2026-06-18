@@ -9,7 +9,7 @@ const handleShare = async () => {
     const combinedText = `\n  link:\n https://behzadbakhshayesh.github.io/PrizeWheel/ \n`;
 
     const shareData = {
-        title: "جفت تاس",
+        title: "چرخ گردون",
         text: combinedText,
     };
 
