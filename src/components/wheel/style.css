@@ -1,47 +1,31 @@
-.wheel-wrapper {
+.content {
     width: 100%;
     height: 100%;
-    background: #101828;
-    background: linear-gradient(135deg, rgba(16, 24, 40, 1) 0%, rgba(70, 8, 9, 1) 50%, rgba(0, 0, 0, 1) 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 100px;
-}
-
-.wheel-wrapper .header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.wheel-wrapper .content {
-    width: 1920px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 120px;
-
-}
-
-.wheel-wrapper .content .wheel-container {
-    width: 100%;
-}
-
-.wheel-wrapper .content .wheel-btn {
-    width: 100%;
-    box-shadow: 0px 0px 60px 0px #FF2B2B1A inset;
-    box-shadow: 0px 0px 60px 0px #FF2B2B99;
-    border: 2px solid #FF2B2B;
-    border-radius: 100px;
-    padding: 200px;
-    background: #82181A80;
-    background: linear-gradient(135deg, rgba(130, 24, 26, 1) 0%, rgba(0, 0, 0, 1) 50%, rgba(130, 24, 26, 1) 100%);
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
+    flex-direction: column;
+}
+
+
+.content .wheel-container {
+    width: 100%;
+    flex: 1;
+}
+
+.wheel-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    width: 100%;
+    padding: 12px 24px;
+    font-weight: 700;
+    transition: all .2s;
+    background-color: var(--main-btn-bg);
     color: #fff;
+
 }
